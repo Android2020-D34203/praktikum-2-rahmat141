@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/hitung"
+        android:layout_width="174dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="kalkulator"
+        android:text="@string/hitung"
+        app:layout_constraintBottom_toTopOf="@+id/hasil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operasi" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="349dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="284dp"
+        android:text="@string/hasil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hitung" />
+
+    <EditText
+        android:id="@+id/angka1"
+        android:layout_width="348dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="177dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Masukan angka 1"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/angka2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+    <EditText
+        android:id="@+id/angka2"
+        android:layout_width="348dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Masukan Angka 2"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/operasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/angka1" />
+
+    <EditText
+        android:id="@+id/operasi"
+        android:layout_width="347dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Masukan Operasi (+,-,/,*)"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/hitung"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/angka2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
